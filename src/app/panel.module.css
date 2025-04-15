@@ -1,0 +1,5 @@
+/* paneldemo.module.css */
+.mypanel :global(.p-panel-header) {
+    background-color: #07c4e8;
+    color: #ffffff;
+}
