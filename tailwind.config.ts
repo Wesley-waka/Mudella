@@ -1,18 +1,33 @@
-import type { Config } from 'tailwindcss';
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx}', // Include all files in the src directory
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      colors: {
-        // Add custom colors if needed
-        'gray-20': '#f0f0f0', // Example custom color
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        burgundy: '#800020',
+        lurgundy: '#b44c63',
+        stripe: '#efa4aa',
+        durgundy:'#6C001B',
+        cream: '#006400',
+        beige: '#F5F5DC',
+        navy: '#000080',
+        primary2: 'hsl(22, 28%, 29%)',
+        awhite: '#FAEBD7'
+
+      },
+      screens: {
+        'xs': '320px',
+      }
     },
   },
   plugins: [],
 };
-
-export default config;

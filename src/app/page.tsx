@@ -1,198 +1,340 @@
 import Image from "next/image";
 import { Button } from "primereact/button";
-import panelModule from './panel.module.css'
+import panelModule from './panel.module.css';
+import Footer from "./Footer";
+
 export default function Home() {
   return (
     <div>
 
       {/* Hero */}
-      <div className="h-[720px] w-full bg-[#fc5c65]">
+      <div className="h-[1000px] w-full bg-[#fc5c65] flex flex-col items-center justify-center text-white mx-auto gap-4 ">
+
+        <div className="flex flex-col items-center justify-center gap-4 max-w-[1500px] mx-auto">
+          <div>
+            <h1 className="text-center leading-16">Ending Gender-Based Violence & Unsafe Abortion, <span className="block"> Fast, Safe, and Connected.</span></h1>
+          </div>
+          <div>
+          <p className="text-center text-lg mt-4">
+          Get instant help, find verified services, and access life-saving support—all in one place. 
+          <span className="block">Trigger emergency alerts, book consultations, or chat with Sidi AI for guidance.</span>
+                </p>
+          </div>
+          <button className="bg-purple-600 px-10 py-3 rounded-md text-medium font-bold mt-4">Learn More</button>
+          <Image
+            src="/hero.png"
+            alt="hero"
+            height={320}
+            width={320}
+            className="object-cover object-center mt-4"
+          />
+        </div>
 
       </div>
 
       {/* Problem Statement*/}
-      <div>
-        <div className="h-[720px] w-full bg-gray-[20px]">
+      <div className="my-20">
+        <div className=" bg-gray-[20px] max-w-[1500px] mx-auto">
+          <div className="flex flex-col items-center justify-center gap-4">
+            <h1 className="text-center">Your Safety,Our Care</h1>
+            <p className="text-center w-[400px]">Emergency alerts for GBV, safe abortion care, and AI support—anytime, anywhere.</p>
+          </div>
+          <div className="flex flex-row space-x-8 mt-28">
+            <div className="w-[400px] flex flex-col bg-purple-200 h-[300px]   rounded-xl ">
+            <div className="flex flex-col items-center justify-center gap-4 py-2 px-3">
+                <img src="/protect.png" alt="warning" className="" height={100} width={100} />
+
+                <h2 className="text-center text-2xl font-semibold">
+                  Incident Reponse
+                </h2>
+
+                <p className="text-center">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, amet! Omnis a mollitia nobis alias nihil harum et nulla odit 
+                </p>
+
+              </div>
+            </div>
+
+            <div className="w-[400px] flex flex-col bg-purple-200 h-[300px]   rounded-xl ">
+            <div className="flex flex-col   items-center justify-center gap-4 py-2 px-3">
+                <img src="/medic.png" alt="warning" className="w-[100px] h-[100px]" />
+
+                <h2 className="text-center text-2xl font-semibold"> 
+                  Arbotion Care
+                </h2>
+
+                <p className="text-center">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, amet! Omnis a mollitia nobis alias nihil harum et nulla odit 
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="w-[400px] flex flex-col bg-purple-200 h-[300px]   rounded-xl ">
+            <div className="flex flex-col   items-center justify-center gap-4 py-2 px-3">
+                <img src="/doctors-office.png" alt="warning" className="w-[100px] h-[100px]" />
+
+                <h2 className="text-center text-2xl font-semibold">
+                  Therapy and Consultation
+                </h2>
+
+                <p className="text-center">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, amet! Omnis a mollitia nobis alias nihil harum et nulla odit 
+                </p>
+              </div>
+              
+            </div>
+
+            <div className="w-[400px] flex flex-col  bg-purple-200  h-[300px]   rounded-xl ">
+            <div className="flex flex-col items-center justify-center gap-4 py-2 px-3">
+                <Image src="/doctor.png" alt="warning" className="p-4 bg-[#fc5c65] rounded-full" height={100} width={100} />
+
+
+                <h2 className="text-center text-2xl font-semibold">
+                  Sidi AI(AI practitioner)
+                </h2>
+
+                <p className="text-center">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, amet! Omnis a mollitia nobis alias nihil harum et nulla odit 
+                </p>
+              </div>
+            </div>
+
+          </div>
 
         </div>
       </div>
 
       {/* How it works*/}
-      <div>
-        <div className="h-[620px] w-full bg-red-100">
+      <div className="bg-red-100">
+        <div className="max-w-[74rem] mx-auto px-9 ">
+        <div>
+              {/* <div className=" flex flex-col items-center space-y-6 my-20">
+                  <h3 className="text-4xl text-center">Discover KSK -<br /> Where Innovation Meets Design</h3>
+                  <img className="object-cover h-48 rounded-md w-[1600px] h-[550px]" 
+                      src="/assets/images/furni.jpg" alt="sofa"/>
+              </div> */}
+              <div>
+                <div className="text-center flex flex-col items-center">
+                    <h1 className="font-thin text-sm">KSK LLC</h1>
+                    <h2 className="2xl text-3xl text-center">KSK LLC Journey Story</h2>
+                    <h3 className=" w-[700px] mt-[20px] ">The KSK Journey:Transforming spaces with innovative
+                        design.Explore
+                        our story of
+                        craftmanship and
+                        style,creating
+                        furniture that inspires and enhances modern living.</h3>
+                </div>
+                <div className="py-10">
+                    <div className="flex flex-col space-y-12 items-center my-4">
+                        <div className="flex w-full flex-row  space-x-6  justify-between" >
+                            <div className="h-[300px] w-1/2  rounded-md flex flex-row justify-center items-center">
+                                <Image
+                                    src="/incident.png"
+                                    className=""
+                                    alt=""
+                                    height={220}
+                                    width={220}
+                                />
+                            </div>
+                            <div className="align-middle my-auto w-1/2">
+                            <div
+                              className="flex items-center rounded-md bg-red-50 p-8 border-red-600 my-4"
+                              style={{ width: "100px", height: "50px", border: "1px solid rgb(158, 40, 41)" }}
+                            >
+                              <img src="/siren.png" alt="Hospitality Icon" />
+                              </div>
+                                <h3 className="text-xl font-semibold mb-2">Hospitality Furniture</h3>
+                                <h3 className="">Transform your hotel or restaurant with our elegant and durable
+                                    furniture. From stylish dining sets to comfortable lounge chairs, we offer designs that
+                                    cater to
+                                    both aesthetics and functionality.</h3>
+                            </div>
+                        </div>
+
+                        <div className="flex w-full flex-row  space-x-6  justify-between" >
+                          <div className="align-middle my-auto w-1/2">
+                            <div
+                              className="flex items-center rounded-md bg-red-50 p-8 border-red-600 my-4"
+                              style={{ width: "100px", height: "50px", border: "1px solid rgb(158, 40, 41)" }}
+                            >
+                              <img src="/pills.png" alt="Retail Icon" />
+                            </div>
+                                <h3 className="text-xl font-semibold mb-2">Healthcare Furniture</h3>
+                                <h3  className="">Our healthcare furniture is designed with both patients and
+                                    providers
+                                    in mind. We focus on comfort, durability, and hygiene, ensuring that our products meet
+                                    the rigorous standards.</h3>
+                            </div>
+
+                            <div className="w-1/2 flex flex-row justify-center items-center">
+                            <Image
+                                    src="/abortion.png"
+                                    className=""
+                                    alt=""
+                                    height={220}
+                                    width={220}
+                                />
+                            </div>
+                        </div>
+
+                        <div className="flex w-full flex-row  space-x-6  justify-between" >
+                        <div className="w-1/2 flex flex-row justify-center items-center">
+                            <Image
+                                    src="/consultation.png"
+                                    className=""
+                                    alt=""
+                                    height={220}
+                                    width={220}
+                                />
+                            </div>
+                            <div className="align-middle my-auto w-1/2">
+                            <div
+                              className="flex items-center rounded-md bg-red-50 p-8 border-red-600 my-4"
+                              style={{ width: "100px", height: "50px", border: "1px solid rgb(158, 40, 41)" }}
+                            >
+                              <img src="/doctors-office.png" alt="Hospitality Icon" />
+                              </div>
+                                <h3 className="text-xl font-semibold mb-2">Hospitality Furniture</h3>
+                                <h3 className="">Transform your hotel or restaurant with our elegant and durable
+                                    furniture. From stylish dining sets to comfortable lounge chairs, we offer designs that
+                                    cater to
+                                    both aesthetics and functionality.</h3>
+                            </div>
+                        </div>
+
+                        <div className="flex w-full flex-row  space-x-6  justify-between" >
+                          <div className="align-middle my-auto w-1/2">
+                            <div
+                              className="flex items-center rounded-md bg-red-50 p-8 border-red-600 my-4"
+                              style={{ width: "100px", height: "50px", border: "1px solid rgb(158, 40, 41)" }}
+                            >
+                              <img src="/doctorAI.png" alt="Retail Icon" />
+                            </div>
+                                <h3 className="text-xl font-semibold mb-2">Healthcare Furniture</h3>
+                                <h3  className="">Our healthcare furniture is designed with both patients and
+                                    providers
+                                    in mind. We focus on comfort, durability, and hygiene, ensuring that our products meet
+                                    the rigorous standards.</h3>
+                            </div>
+
+                            <div className="w-1/2 flex flex-row justify-center items-center">
+                            <Image
+                                    src="/chatAI.png"
+                                    className=""
+                                    alt=""
+                                    height={220}
+                                    width={220}
+                                />
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
 
 
         </div>
       </div>
 
+      {/* </div> */}
+      </div>
+
+      
+
 
       {/* Demo or screenshot*/}
       <div>
-        <div className="h-[620px] w-full bg-white">
-          <h1>Feautures that blows mind</h1>
-          <p>End to end payments and financial management in a <br /> single solution.Meet the right platform to help realize.</p>
+        
 
-          <div className="flex flex-row space-x-2">
-            <div class="w-[400px] flex flex-col bg-white h-[300px] border border-gray-200 border-t-4 border-t-red-600 shadow-2xs rounded-xl ">
-              <div class="p-4 md:p-5">
-                <h3 class="text-lg font-bold text-gray-800 dark:text-black">
-                  Card title
-                </h3>
-                <p class="mt-2 text-gray-500 dark:text-neutral-400">
-                  With supporting text below as a natural lead-in to additional content.
-                </p>
-                <a class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-blue-600 decoration-2 hover:text-blue-700 hover:underline focus:underline focus:outline-hidden focus:text-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-600 dark:focus:text-blue-600" href="#">
-                  Card link
-                  <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m9 18 6-6-6-6"></path>
-                  </svg>
-                </a>
-              </div>
+
+        <div className="my-14 bg-white">
+            <div className="max-w-[100rem] mx-auto pl-8">
+                <h3 className="text-4xl text-left font-medium leading-12 my-10 ">Your safety and Guidance,<br />is at your fingertip</h3>
             </div>
-          </div>
+            <div className="relative overflow-hidden my-8">
+                <div className="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+                    <div aria-hidden="true" className="flex -z-[1] absolute start-0">
+                        <div className="bg-blue-500 opacity-20 blur-3xl w-[1036px] h-[300px] ">
+                        </div>
+                    </div>
+                    <div className="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+                        <div className="hidden lg:block lg:col-span-2">
+                            <img className="rounded-xl"
+                                src="/safety.jpg"
+                                alt="Avatar"/>
+                        </div>
+                        <div className="lg:col-span-4">
+                            <blockquote>
 
+                                <p
+                                    className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal ">
+                                    I was looking for unique and stylish furniture for my new apartment, and KSK LLC
+                                    delivered. Their selection is amazing, and the staff helped me find exactly what I
+                                    needed. Great experience!
+                                </p>
+                                <footer className="mt-6">
+                                    <div className="flex items-center">
+                                        <div className="lg:hidden shrink-0">
+                                            <img className="size-12 rounded-full"
+                                                src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                                                alt="Avatar"/>
+                                        </div>
+                                        <div className="ms-4 lg:ms-0">
+                                            <p className="font-medium text-gray-800 dark:text-neutral-800">
+                                                Nicole Grazioso
+                                            </p>
+                                            <p className="text-sm text-gray-600 dark:text-neutral-800">
+                                                Head of Finance
+                                            </p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
         </div>
+            </div>
 
         {/* Screenshots come here */}
       </div>
 
       {/* Testimonials*/}
-      <div>
-        <div className="h-[620px] w-full bg-green-100">
-
-          <div className="flex flex-row space-x-2">
-            <img src="/wom-2.png" alt="warning" height={600} width={600} />
-
-            <div>
-              <p>Our feature</p>
-              <h1>Receive payments <br /> quickly from anywhere</h1>
-              <p>why kept every home mrs Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non, nobis quo corrupti labore sequi doloremque facilis nemo facere cum, quia quidem deserunt natus debitis error officiis asperiores voluptatibus dolorem!</p>
-
-              <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-600 focus:outline-hidden focus:bg-teal-600 disabled:opacity-50 disabled:pointer-events-none">
-                Get Started
-              </button>
-            </div>
+      <div className="max-w-[85rem]  px-4 py-10 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="max-w-md">
+            <h2 className="text-2xl font-bold text-black-500 ">Subscribe</h2>
+            <p className="mt-3 text-black-500 ">
+              Subscribe and start making the most of every engagement.
+            </p>
           </div>
 
-        </div>
-      </div>
-
-      {/* CTA */}
-      <div>
-        <div className="w-full h-[620px] bg-red-100 flex flex-row space-x-2">
-          <div>
-            <p>We are here to help <br /> you grow your buiness</p>
-          </div>
-
-          <div className="h-[400px] w-[400px] bg-white">
-
-            <div>
-              <div className="max-w-sm space-y-3">
-                <div className="relative">
-                  <input type="email" className="peer py-2.5 sm:py-3 pe-0 ps-8 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 sm:text-sm focus:border-t-transparent focus:outline-none focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600 dark:focus:border-b-neutral-600" placeholder="Enter name" />
-                  <div className="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-2 peer-disabled:opacity-50 peer-disabled:pointer-events-none">
-                    <svg className="shrink-0 size-4 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                      <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                  </div>
+          <form>
+            <div className="w-full sm:max-w-lg md:ms-auto">
+              <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+                <div className="w-full">
+                  <label for="hero-input" className="sr-only">Search</label>
+                  <input type="text"  className="py-2.5 sm:py-3 px-4 block w-full border-black-200 border-[0.5px] rounded-lg sm:text-sm  focus:outline-0  bg-white disabled:opacity-50 disabled:pointer-events-none placeholder-black" placeholder="Enter your email"/>
                 </div>
-
-                <div className="relative">
-                  <input type="password" className="peer focus:outline-none py-2.5 sm:py-3 pe-0 ps-8 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 sm:text-sm focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600 dark:focus:border-b-neutral-600" placeholder="Enter password" />
-                  <div className="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-2 peer-disabled:opacity-50 peer-disabled:pointer-events-none">
-                    <svg className="shrink-0 size-4 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z"></path>
-                      <circle cx="16.5" cy="7.5" r=".5"></circle>
-                    </svg>
-                  </div>
-                </div>
+                <a className="w-full sm:w-auto whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#fc5c65] text-white hover:bg-purple-700 focus:outline-0  disabled:opacity-50 disabled:pointer-events-none" href="#">
+                  Subscribe
+                </a>
               </div>
+              <p className="mt-3 text-sm text-gray-600">
+                No spam, unsubscribe at any time
+              </p>
             </div>
-
-
-          </div>
-
-
-        </div>
-        <div className="h-[620px] w-full bg-white mx-auto p-4 max-w-[1500px]  mx-auto items-center flex justify-center">
-
-          <div>
-            <p>project management app</p>
-            <h2>Download our free project management for clients</h2>
-            <p>End to end payments and financial management in a single action</p>
-
-            <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-600 focus:outline-hidden focus:bg-teal-600 disabled:opacity-50 disabled:pointer-events-none">
-              Button
-            </button>
-
-            <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-purple-500 text-white hover:bg-purple-600 focus:outline-hidden focus:bg-purple-600 disabled:opacity-50 disabled:pointer-events-none">
-              Button
-            </button>
-          </div>
-
+          </form>
         </div>
       </div>
 
-      {/* Footer */}
-      <div>
-        <div className="h-[420px] w-full bg-gray-500 text-white">
-          <div className="grid grid-cols-4 gap-8 p-4 max-w-[1500px]  mx-auto">
-            <div className="">
-              <div></div>
-              <h1>Mudella</h1>
-              <p className="pt-3">Mudella is tech startup that ensures the security and safety of the female gender in terms of GBV and access to the right abortion centers</p>
+      
 
-              <h1>Copyright Tanah Air Studio</h1>
-            </div>
-            <div className="">
-              <h1>Services</h1>
-              <ul>
-                <li>Features</li>
-                <li>How it works</li>
-                <li>Testimonials</li>
-                <li>FAQ</li>
-              </ul>
-            </div>
-            <div className="">
-              <h1>Company</h1>
-              <ul>
-                <li>Features</li>
-                <li>How it works</li>
-                <li>Testimonials</li>
-                <li>FAQ</li>
-              </ul>
-            </div>
-            <div className="">
-              <h1>Join a Newsletter</h1>
-              <p>Your Email</p>
-              <div className="relative max-w-sm focus:ring-yellow-50">
-                <textarea
-                  className=" focus:outline-hidden max-h-36 py-2.5 sm:py-3 ps-4 pe-20 block w-full border-gray-700 rounded-lg sm:text-sm disabled:opacity-50 disabled:pointer-events-none focus:border-yellow-500 bg-white focus:ring-yellow-50 text-neutral-900 resize-none overflow-y-auto bg-green"
-                  placeholder="Message..."
-                  rows="1"
-                  data-hs-textarea-auto-height='{
-                    "defaultHeight": 48
-                  }'
-                ></textarea>
-
-                <div className="focus:ring-yellow-50 absolute top-2 end-3 z-10">
-                  <button
-                    type="button"
-                    className="focus:ring-yellow-50 cursor-pointer py-1.5 px-3 inline-flex shrink-0 justify-center items-center text-sm font-medium rounded-lg text-white bg-red-400 focus:outline-hidden focus:bg-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-                  >
-                    Send
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-
+      <Footer/>
     </div>
+
   );
 }
