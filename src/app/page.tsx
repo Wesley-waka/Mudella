@@ -314,7 +314,7 @@ export default function Home() {
             <div className="w-full sm:max-w-lg md:ms-auto">
               <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
                 <div className="w-full">
-                  <label for="hero-input" className="sr-only">Search</label>
+                  <label htmlFor="hero-input" className="sr-only">Search</label>
                   <input type="text"  className="py-2.5 sm:py-3 px-4 block w-full border-black-200 border-[0.5px] rounded-lg sm:text-sm  focus:outline-0  bg-white disabled:opacity-50 disabled:pointer-events-none placeholder-black" placeholder="Enter your email"/>
                 </div>
                 <a className="w-full sm:w-auto whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#fc5c65] text-white hover:bg-purple-700 focus:outline-0  disabled:opacity-50 disabled:pointer-events-none" href="#">
