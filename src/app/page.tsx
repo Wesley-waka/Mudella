@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { Button } from "primereact/button";
-import panelModule from './panel.module.css';
 import Footer from "./Footer";
 
 export default function Home() {
