@@ -5,10 +5,16 @@ export default function Home() {
   return (
     <div>
 
-      {/* Hero */}
-      <div className="h-[1000px] w-full bg-[#fc5c65] flex flex-col items-center justify-center text-white mx-auto gap-4 ">
 
-        <div className="flex flex-col items-center justify-center gap-4 max-w-[1500px] mx-auto">
+
+      {/* Hero */}
+      <div className="h-[1000px] w-full bg-[#fc5c65] flex flex-row p-4 items-start justify-center text-white mx-auto gap-4 ">
+
+        <div>
+          <img src="/logo.png" alt="logo" className="w-[80px] h-[80px] object-cover object-center" />
+        </div>
+
+        <div className="flex flex-col items-center justify-center gap-4 max-w-[1500px] mx-auto mt-4">
           <div>
             <h1 className="text-center leading-16">Ending Gender-Based Violence & Unsafe Abortion, <span className="block"> Fast, Safe, and Connected.</span></h1>
           </div>
@@ -38,16 +44,16 @@ export default function Home() {
             <p className="text-center w-[400px]">Emergency alerts for GBV, safe abortion care, and AI support—anytime, anywhere.</p>
           </div>
           <div className="flex flex-row space-x-8 mt-28">
-            <div className="w-[400px] flex flex-col bg-purple-200 h-[300px]   rounded-xl ">
+            <div className="w-[400px] flex flex-col bg-purple-200 h-[300px]  rounded-xl ">
             <div className="flex flex-col items-center justify-center gap-4 py-2 px-3">
                 <img src="/protect.png" alt="warning" className="" height={100} width={100} />
 
                 <h2 className="text-center text-2xl font-semibold">
-                  Incident Reponse
+                  Incident Response
                 </h2>
 
                 <p className="text-center">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, amet! Omnis a mollitia nobis alias nihil harum et nulla odit 
+                  Real Time data tracking to combat GBV and unsafe abortion, with a focus on safety and support. 
                 </p>
 
               </div>
@@ -62,7 +68,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-center">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, amet! Omnis a mollitia nobis alias nihil harum et nulla odit 
+                  With a follow-up care and a real time tracking to the location 
                 </p>
 
               </div>
@@ -78,7 +84,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-center">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, amet! Omnis a mollitia nobis alias nihil harum et nulla odit 
+                  We offer consultation for arbotion patients either pre-arbotion or post arbotion through our certified consultants
                 </p>
               </div>
               
@@ -94,7 +100,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-center">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, amet! Omnis a mollitia nobis alias nihil harum et nulla odit 
+                  AI proctor which is able to answer your queries regarding sexual related issues
                 </p>
               </div>
             </div>
@@ -105,7 +111,7 @@ export default function Home() {
       </div>
 
       {/* How it works*/}
-      <div className="bg-red-100">
+      <div className="bg-red-200">
         <div className="max-w-[74rem] mx-auto px-9 ">
         <div>
               {/* <div className=" flex flex-col items-center space-y-6 my-20">
@@ -115,14 +121,9 @@ export default function Home() {
               </div> */}
               <div>
                 <div className="text-center flex flex-col items-center">
-                    <h1 className="font-thin text-sm">KSK LLC</h1>
-                    <h2 className="2xl text-3xl text-center">KSK LLC Journey Story</h2>
-                    <h3 className=" w-[700px] mt-[20px] ">The KSK Journey:Transforming spaces with innovative
-                        design.Explore
-                        our story of
-                        craftmanship and
-                        style,creating
-                        furniture that inspires and enhances modern living.</h3>
+                    <h1 className="font-thin text-sm">MUDELLA LIMITED</h1>
+                    <h2 className="2xl text-3xl text-center">FEATURES</h2>
+                    <h3 className=" w-[700px] mt-[20px] ">Mudella is a Tech Innovation that is combating Sexual Related Issues through our enabled technology</h3>
                 </div>
                 <div className="py-10">
                     <div className="flex flex-col space-y-12 items-center my-4">
@@ -143,11 +144,8 @@ export default function Home() {
                             >
                               <img src="/siren.png" alt="Hospitality Icon" />
                               </div>
-                                <h3 className="text-xl font-semibold mb-2">Hospitality Furniture</h3>
-                                <h3 className="">Transform your hotel or restaurant with our elegant and durable
-                                    furniture. From stylish dining sets to comfortable lounge chairs, we offer designs that
-                                    cater to
-                                    both aesthetics and functionality.</h3>
+                                <h3 className="text-xl font-semibold mb-2">Incident Response</h3>
+                                <h3 className="">We are able to provide a Real time data Tracking on a map where you abl to trigger a response and an alert is sent to Authorities and Registered members within your location proximity and you able to see their details including the progress they are making towards your location and you are able to call or chat via the app</h3>
                             </div>
                         </div>
 
@@ -159,11 +157,8 @@ export default function Home() {
                             >
                               <img src="/pills.png" alt="Retail Icon" />
                             </div>
-                                <h3 className="text-xl font-semibold mb-2">Healthcare Furniture</h3>
-                                <h3  className="">Our healthcare furniture is designed with both patients and
-                                    providers
-                                    in mind. We focus on comfort, durability, and hygiene, ensuring that our products meet
-                                    the rigorous standards.</h3>
+                                <h3 className="text-xl font-semibold mb-2">Arbotion Care</h3>
+                                <h3  className="">We are able to get a real time precise location of where you are located and give you suggestion of centers nearby your location we give you a real time tracking to the location by directing you to the center you are able to book a schedule and initiate payment if required</h3>
                             </div>
 
                             <div className="w-1/2 flex flex-row justify-center items-center">
@@ -194,11 +189,8 @@ export default function Home() {
                             >
                               <img src="/doctors-office.png" alt="Hospitality Icon" />
                               </div>
-                                <h3 className="text-xl font-semibold mb-2">Hospitality Furniture</h3>
-                                <h3 className="">Transform your hotel or restaurant with our elegant and durable
-                                    furniture. From stylish dining sets to comfortable lounge chairs, we offer designs that
-                                    cater to
-                                    both aesthetics and functionality.</h3>
+                                <h3 className="text-xl font-semibold mb-2">Consultation and Therapy</h3>
+                                <h3 className="">We offer consultation for arbotion patients either pre-arbotion or post arbotion through our certified consultants who have been done a thoroughly check to be verified on the platform,we have therapist available for couples to promote a healthy relationship</h3>
                             </div>
                         </div>
 
@@ -210,11 +202,8 @@ export default function Home() {
                             >
                               <img src="/doctorAI.png" alt="Retail Icon" />
                             </div>
-                                <h3 className="text-xl font-semibold mb-2">Healthcare Furniture</h3>
-                                <h3  className="">Our healthcare furniture is designed with both patients and
-                                    providers
-                                    in mind. We focus on comfort, durability, and hygiene, ensuring that our products meet
-                                    the rigorous standards.</h3>
+                                <h3 className="text-xl font-semibold mb-2">Sidi AI(AI powered Proctor)</h3>
+                                <h3  className="">Sidi is trained AI proctor which is able to answer your queries regarding sexual related issues if is uncertain it will be able to redirect you or suggest to you consultatnts who will be able to answer you question as expected.</h3>
                             </div>
 
                             <div className="w-1/2 flex flex-row justify-center items-center">
@@ -269,9 +258,7 @@ export default function Home() {
 
                                 <p
                                     className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal ">
-                                    I was looking for unique and stylish furniture for my new apartment, and KSK LLC
-                                    delivered. Their selection is amazing, and the staff helped me find exactly what I
-                                    needed. Great experience!
+                                    "Mudella is a game-changer in the fight against  GBV and unsafe abortion. The app's real-time tracking and emergency alert features have made a significant difference in my life. I feel safer knowing that help is just a click away."
                                 </p>
                                 <footer className="mt-6">
                                     <div className="flex items-center">
@@ -280,14 +267,14 @@ export default function Home() {
                                                 src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                                 alt="Avatar"/>
                                         </div>
-                                        <div className="ms-4 lg:ms-0">
+                                        {/* <div className="ms-4 lg:ms-0">
                                             <p className="font-medium text-gray-800 dark:text-neutral-800">
                                                 Nicole Grazioso
                                             </p>
                                             <p className="text-sm text-gray-600 dark:text-neutral-800">
                                                 Head of Finance
                                             </p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </footer>
                             </blockquote>
@@ -306,7 +293,8 @@ export default function Home() {
           <div className="max-w-md">
             <h2 className="text-2xl font-bold text-black-500 ">Subscribe</h2>
             <p className="mt-3 text-black-500 ">
-              Subscribe and start making the most of every engagement.
+              <span className="block">Get the latest news and updates on our app</span>
+              <span className="block">and be the first to know about new features and improvements.</span>
             </p>
           </div>
 
@@ -317,7 +305,7 @@ export default function Home() {
                   <label htmlFor="hero-input" className="sr-only">Search</label>
                   <input type="text"  className="py-2.5 sm:py-3 px-4 block w-full border-black-200 border-[0.5px] rounded-lg sm:text-sm  focus:outline-0  bg-white disabled:opacity-50 disabled:pointer-events-none placeholder-black" placeholder="Enter your email"/>
                 </div>
-                <a className="w-full sm:w-auto whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#fc5c65] text-white hover:bg-purple-700 focus:outline-0  disabled:opacity-50 disabled:pointer-events-none" href="#">
+                <a className="w-full sm:w-auto whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#fc5c65] text-white hover:bg-purple-700 focus:outline-0  disabled:opacity-50 disabled:pointer-events-none" >
                   Subscribe
                 </a>
               </div>
