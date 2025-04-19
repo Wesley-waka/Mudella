@@ -258,7 +258,7 @@ export default function Home() {
 
                                 <p
                                     className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal ">
-                                    Mudella is a game-changer in the fight against  GBV and unsafe abortion. The app's real-time tracking and emergency alert features have made a significant difference in my life. I feel safer knowing that help is just a click away.
+                                    Mudella is a game-changer in the fight against  GBV and unsafe abortion. The app&apos;s real-time tracking and emergency alert features have made a significant difference in my life. I feel safer knowing that help is just a click away.
                                 </p>
                                 <footer className="mt-6">
                                     <div className="flex items-center">
