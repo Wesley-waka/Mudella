@@ -39,18 +39,23 @@ const Footer = () => {
       <div className='flex flex-col space-y-3'>
         <div className='text-3xl font-extrabold'>Navigation</div>
         <Link href='/'>Home</Link>
-        <Link href='/services/pharmaceuticals'>Pharmaceuticals</Link>
+        <Link href='/'>GBV</Link>
+        <Link href='/'>Arbotion Care</Link>
+        <Link href='/'>Consultation</Link>
+        <Link href='/'>Sidi AI</Link>
+
+        {/* <Link href='/services/pharmaceuticals'>Pharmaceuticals</Link>
         <Link href='/services/manufacturing'>Manufacturing</Link>
         <Link href='/services/real-estate'>Real Estate</Link>
         <Link href='/about-us'>About Us</Link>
-        <Link href='/contact-us'>Contact Us</Link>
+        <Link href='/contact-us'>Contact Us</Link> */}
       </div>
 
       <div className='flex flex-col space-y-3'>
         <div className='text-3xl font-extrabold'>Get in touch</div>
         <div className='flex flex-row space-x-3'>
           <FiMapPin size={20}/>
-          <div>147 W 35th St,New York,NY 10001</div>
+          <div>Kenya,Nairobi</div>
         </div>
         <div className='flex flex-row space-x-3'>
           <IoCallOutline size={20}/>
